@@ -37,9 +37,11 @@ public class BookmarkManager {
 		return book;
 	}
 	
-	public WebLink createWebLink(String url,String host) {
+	public WebLink createWebLink(long id,String title,String url,String host) {
 		WebLink webLink=new WebLink();
 		webLink.setUrl(url);
+		webLink.setId(id);
+		webLink.setTitle(title);
 		webLink.setHost(host);
 		return webLink;
 	}
